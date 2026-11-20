@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="arkhe.png" type="imagen/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs"></script>
+    <script src="scritp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>ARKHE</title>
+    </head>
+<body>
+<header class="main-header">
+    <span class="header-subtitle">BEAUTY · MAKEUP · STYLE</span>
+    <h1>ARKHE</h1>
+    <div class="header-divider"></div>
+    <p class="header-slogan">
+        REALZA TU BELLEZA, EXPRESA TU ESENCIA
+    </p>
+    <span class="header-category">TIENDA DE MAQUILLAJE</span>
+</header>
+
+    <main>
+        <section class="card">
+        <h2>PRODUCTOS DISPONIBLES</h2>
+        <div class="product-container">
+
+    <div class="catalog-intro">
+        <img src="imagenes/iniciodisponible.jpeg"
+        onerror="this.src='https://placehold.co/400x300'"
+        alt="Productos ARKHE">
+    </div>
+
+    <div class="carousel-wrapper">
+        <div class="products-grid" id="lista-productos">
+
+            <!-- PRODUCTO 1 -->
+            <li>
+                <img src="imagenes/pestañaspelopelo.jpg" alt="Libro de pestañas">
+                <h3>Libro de pestañas</h3>
+                <button onclick="verDetalle('Kit Libro Extensiones de Pestañas DIY', 'Bs. 45', 'Logra una mirada de impacto y con acabado profesional sin salir de casa. Nuestro Libro de Extensiones de Pestañas DIY contiene una increíble variedad de racimos en diferentes densidades y longitudes (de 8 mm a 16 mm), permitiéndote diseñar desde un estilo natural hasta un efecto de volumen ruso espectacular. Son ultra ligeras, de banda suave y súper fáciles de aplicar. ¡Ahorra tiempo y luce unas pestañas de salón todos los días!', 'imagenes/pestañaspelopelo.jpg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Kit Libro Extensiones de Pestañas DIY', 'Bs 45')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 2 -->
+            <li>
+                <img src="imagenes/ohmparfummasc.jpg" alt="Ohm Perfume">
+                <h3>Ohm Perfume</h3>
+                <button onclick="verDetalle('Ohm - Esencia Viva, Carácter Inconfundible', 'Bs. 380', 'Frescura, poder y sofisticación en un solo frasco. Una fragancia icónica con intensas notas herbales, toques amaderados y un fondo de cuero elegante. Diseñada para el hombre seductor y distinguido que no pasa desapercibido.', 'imagenes/ohmparfummasc.jpg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Ohm - Esencia Viva, Carácter Inconfundible', 'Bs 380')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 3 -->
+            <li>
+                <img src="imagenes/polvocompacto.jpeg" alt="Polvo compacto">
+                <h3>Polvo Compacto</h3>
+                <button onclick="verDetalle('Polvo Compacto', 'Bs. 20', 'Sella tu maquillaje con un acabado aterciopelado y de larga duración. Nuestra fórmula de textura ultra fina controla el brillo facial sin resecar la piel.', 'imagenes/polvocompacto.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Polvo Compacto', 'Bs 20')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 4 -->
+            <li>
+                <img src="imagenes/lipgloss.jpeg" alt="Lip Gloss">
+                <h3>Lip Gloss</h3>
+                <button onclick="verDetalle('Lip Gloss', 'Bs. 6', 'Labios jugosos, voluminosos y con un brillo tridimensional irresistible. Nuestro lip gloss en tonos rosados aporta un toque de color fresco y natural.', 'imagenes/lipgloss.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Lip Gloss', 'Bs 6')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 6 -->
+            <li>
+                <img src="imagenes/cremaultrahidranteyanbal.jpeg" alt="Crema hidratante">
+                <h3>Crema Ultra Hidratante</h3>
+                <button onclick="verDetalle('Crema Ultra Hidratante con ácido hialurónico Yanbal', 'Bs. 199', '¡Dale a tu rostro el cuidado que se merece! La crema ultra hidratante Aqua Fix con ácido hialurónico recarga tu piel de frescura y luminosidad.', 'imagenes/cremaultrahidranteyanbal.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Crema Ultra Hidratante con ácido hialurónico Yanbal', 'Bs 199')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 7 -->
+            <li>
+                <img src="imagenes/suerohidranteyanbal.jpeg" alt="Suero hidratante">
+                <h3>Suero Ultra Hidratante</h3>
+                <button onclick="verDetalle('Suero Ultra Hidratante efecto relleno', 'Bs. 199', '¡Transforma tu piel desde la primera gota! Este suero concentrado con 3.5% Complejo Ácido Hialurónico penetra profundamente para devolverle a tu rostro la firmeza, suavidad y vitalidad que necesita.', 'imagenes/suerohidranteyanbal.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Suero Ultra Hidratante efecto relleno', 'Bs 199')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 8 -->
+            <li>
+                <img src="imagenes/gaiaparfumfem.jpg" alt="Gaia perfume">
+                <h3>Gaïa Eau</h3>
+                <button onclick="verDetalle('Perfume Gaïa de Yanbal - Esencia Femenina y Mística', 'Bs. 310', 'Gaïa de Yanbal es una fragancia floral e intensa que rinde tributo a la mujer libre, mística y elegante.', 'imagenes/gaiaparfumfem.jpg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Perfume Gaïa de Yanbal - Esencia Femenina y Mística', 'Bs 310')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 9 -->
+            <li>
+                <img src="imagenes/sombrasmake.jpeg" alt="Sombras">
+                <h3>Sombras para ojos</h3>
+                <button onclick="verDetalle('Sombras para ojos', 'Bs. 25', 'Inspírate en la calidez de la naturaleza. Nuestra paleta de tonos tierra combina sombras altamente pigmentadas, sedosas y fáciles de difuminar.', 'imagenes/sombrasmake.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Sombras para ojos', 'Bs 25')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 10 -->
+            <li>
+                <img src="imagenes/esponjasmakevarias.jpeg" alt="Esponjas varias">
+                <h3>Esponjas varias</h3>
+                <button onclick="verDetalle('Esponjas de maquillaje varias', 'Bs. 16', 'Accesorios ideales para conseguir una aplicación uniforme y crear cualquier look.', 'imagenes/esponjasmakevarias.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Esponjas de maquillaje varias', 'Bs 16')">
+                Agregar al carrito
+                </button>
+            </li>
+                
+            <!-- PRODUCTO 11 -->
+            <li>
+                <img src="imagenes/Esponjasdemaquillaje.jpeg" alt="Esponjas de maquillaje">
+                <h3>Esponjas de maquillaje</h3>
+                <button onclick="verDetalle('Esponjas de maquillaje', 'Bs. 9', 'El secreto para una aplicación impecable. Esta esponja de textura suave y poro ultra fino se expande al humedecerse.', 'imagenes/Esponjasdemaquillaje.jpeg')">
+                    Ver detalles
+                </button>
+                  <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Esponjas de maquillaje', 'Bs 9')">
+                Agregar al carrito
+                </button>
+            </li>
+
+            <!-- PRODUCTO 12 -->
+            <li>
+                <img src="imagenes/brochasdemake.jpeg" alt="Brochas">
+                <h3>Brochas de Maquillaje</h3>
+                <button onclick="verDetalle('Brochas de maquillaje', 'Bs. 17', 'Eleva tu técnica al siguiente nivel. Este set completo de brochas cuenta con cerdas sintéticas ultra suaves que garantizan una aplicación y difuminado perfectos.', 'imagenes/brochasdemake.jpeg')">
+                    Ver detalles
+                </button>
+                <br>
+                <button class="btn-add-cart"
+                onclick="agregarAlCarrito('Brochas de maquillaje', 'Bs 17')">
+                Agregar al carrito
+                </button>
+            </li>
+
+        </div>
+    </div>
+</div>
+
+</section>
+     
+<section class="card" id="seccion-analizador-rostro">
+    <h2>Descubre tu tipo de rostro</h2>
+    <p class="rostro-intro">
+        Sube una foto frontal con el rostro despejado y buena iluminación para analizar tus proporciones faciales y darte recomendaciones personalizadas.
+    </p>
+
+    <div class="rostro-upload-area" id="drop-area-rostro">
+        <input type="file" id="input-foto-rostro" accept="image/*" hidden>
+        <label for="input-foto-rostro" class="rostro-upload-label">
+            <span class="rostro-icono"></span>
+            <strong>Seleccionar o tomar una foto</strong>
+            <small>Formatos JPG, PNG o WEBP (rostro de frente)</small>
+        </label>
+    </div>
+
+    <div id="rostro-preview-contenedor" class="rostro-preview-oculto">
+        <div class="rostro-imagen-wrapper">
+            <img id="rostro-imagen-preview" alt="Vista previa de tu rostro">
+            <canvas id="rostro-canvas-puntos"></canvas>
+        </div>
+        <button type="button" id="btn-analizar-rostro" class="btn-rostro">
+            Analizar mi tipo de rostro
+        </button>
+    </div>
+
+    <div id="rostro-resultado" class="rostro-resultado-caja" style="display: none;"></div>
+</section>
+<section class="card">
+            <div class="story-section">
+                <img src="imagenes/imgDos.jpeg" onerror="this.src='https://placehold.co/400x300/4d3e3c/D0B0A4?text=Nuestra+Historia'" alt="Historia ARKHE" class="story-img">
+                <div class="story-text">
+                    <h3>Te contamos nuestra historia</h3>
+                    <p style="text-align: justify;">
+                        La idea de este proyecto surgió en nuestro último año de escolaridad.
+                        Ante la necesidad de salir adelante decidimos emprender, entonces formamos
+                        ARKHE. Desde entonces estuvimos trabajando en sacar adelante nuestro
+                        pequeño emprendimiento.
+                    </p>
+                </div>
+            </div>
+     </section>
+     <section class="card">
+            <h3>SÍGUENOS EN NUESTRAS REDES</h3>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/share/1Dvb11q1ev/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.instagram.com/arkhe_makeup?stkn=aGdkMTQzYnl3aGsz" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@arkhe_makeup?_r=1&_t=ZS-9A0Qh0LKdGe" target="_blank " rel="noopener noreferrer">TikTok</a></li>
+            </ul>
+        </section>
+     
+    <section class="card" id="seccion-experiencia">
+    <h2>Cuéntanos tu experiencia</h2>
+    <p class="experiencia-intro">
+        Tu opinión nos ayuda a seguir creando detalles únicos en ARKHE. Déjanos tu reseña:
+    </p>
+    <form id="form-experiencia" action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
+        <div class="campo-grupo">
+            <label for="exp-nombre">Tu nombre</label>
+            <input type="text" id="exp-nombre" name="nombre" placeholder="Ej. Camila R." required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="exp-calificacion">Calificación</label>
+        <!-- seleccionar, opciones para calificar en estresllas -->
+            <select id="exp-calificacion" name="calificacion">
+                <option value="★★★★★">★★★★★ — Me encantó</option>
+                <option value="★★★★☆">★★★★☆ — Muy bueno</option>
+                <option value="★★★☆☆">★★★☆☆ — Bueno</option>
+                <option value="★★☆☆☆">★★☆☆☆ — Regular</option>
+                <option value="★☆☆☆☆">★☆☆☆☆ — Puede mejorar</option>
+            </select>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="exp-comentario">Tu comentario</label>
+            <textarea id="exp-comentario" name="comentario" rows="4" placeholder="¿Qué producto pediste y qué te pareció?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-experiencia">Enviar reseña</button>
+    </form>
+
+    <p id="mensaje-estado" class="estado-envio"></p>
+
+    <!-- Aquí aparecerán los comentarios publicados -->
+    <div id="lista-comentarios" class="comentarios-contenedor"></div>
+</section>
+<!-- pie de pagina-->
+    <footer> 
+        <p>ARKHE Make Up; Florinda y Maria Rene</p>
+    </footer>
+</body>
+</html> 
